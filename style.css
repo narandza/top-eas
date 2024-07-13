@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222831;
+  color: #eee;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+}
+
+.row {
+  border: 1px solid black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.column {
+  background-color: #eee;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.column:hover {
+  background-color: aquamarine;
+}
