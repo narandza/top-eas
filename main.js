@@ -12,7 +12,7 @@ const createGrid = (side = INITIAL_GRID_DIMENSION) => {
       const column = document.createElement("div");
       column.classList.add("column");
       column.addEventListener("mouseover", () => {
-        column.style.backgroundColor = "red";
+        column.style.backgroundColor = getRandomColor();
       });
       row.appendChild(column);
     }
@@ -34,5 +34,17 @@ newGridBtn.addEventListener("click", () => {
     createGrid(dimension);
   }
 });
+
+const getRandomNumberFromARange = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+const getRandomColor = () => {
+  const red = getRandomNumberFromARange(0, 255);
+  const green = getRandomNumberFromARange(0, 255);
+  const blue = getRandomNumberFromARange(0, 255);
+
+  return `rgb(${red}, ${green}, ${blue})`;
+};
 
 createGrid();
