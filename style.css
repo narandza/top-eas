@@ -26,7 +26,6 @@ h1 {
 }
 
 .row {
-  border: 1px solid black;
   height: 200px;
   width: 100%;
   display: flex;
@@ -34,10 +33,20 @@ h1 {
 
 .column {
   background-color: #eee;
-  border: 1px solid black;
   width: 100%;
 }
 
-.column:hover {
-  background-color: aquamarine;
+.newSketchBtn {
+  margin-bottom: 3rem;
+  width: 10rem;
+  height: 2rem;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.newSketchBtn:hover {
+  transform: scale(1.1);
+  transition-timing-function: ease-out;
+  transition: 3ms;
 }
